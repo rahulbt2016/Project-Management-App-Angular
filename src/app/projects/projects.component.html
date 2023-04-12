@@ -1,0 +1,11 @@
+<app-project-form></app-project-form>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div *ngFor="let project of projects" class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <div class="p-6">
+        <h2 class="text-xl font-bold mb-2">{{ project.title }}</h2>
+        <p class="text-gray-700 text-base">{{ project.description }}</p>
+        <p class="text-gray-600 text-sm mt-2">{{ project.category }}</p>
+      </div>
+    </div>
+  </div>
+  
